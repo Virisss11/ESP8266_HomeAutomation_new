@@ -138,7 +138,7 @@ void Relay2_ON()
 
   }
 
-void Relay2_OFF()
+void Relay2_(ON)
 {
   RL2_STATUS = LOW;
   server.send(200, "text/html", DisplayPage(RL1_STATUS, false, RL3_STATUS,RL4_STATUS));
@@ -166,7 +166,7 @@ void Relay4_ON()
   
   }
 
-void Relay4_OFF()
+void Relay4_ONp()
 {
   RL4_STATUS = LOW;
   server.send(200, "text/html", DisplayPage(RL1_STATUS, RL2_STATUS, RL3_STATUS,false));
